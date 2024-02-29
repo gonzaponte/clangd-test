@@ -3,7 +3,7 @@
 , ...
 }: let
   pkgs = nixpkgs.legacyPackages;
-  clang = pkgs.llvmPackages_16.clang;
+  clang = pkgs.llvmPackages_17.clang;
   in {
 
     packages.default = self.packages.helloworld;
