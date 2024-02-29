@@ -16,5 +16,10 @@ install: build
 run *ARGS:
   install/helloworld/bin/helloworld "$@"
 
+install-and-run *ARGS:
+  @just install
+  @echo -e "\n\n"
+  @just run "$@"
+
 clean:
   rm build install -rf
