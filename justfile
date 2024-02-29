@@ -14,9 +14,7 @@ install: build
   meson install -C build
 
 run *ARGS:
-  @echo "Installing..."
-  @just install >& /dev/null
-  @install/helloworld/bin/helloworld "$@"
+  install/helloworld/bin/helloworld "$@"
 
 clean:
   rm build install -rf
